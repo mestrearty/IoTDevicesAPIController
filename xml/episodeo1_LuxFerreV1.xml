@@ -1,0 +1,57 @@
+<pervasiveStoryTelling title="Lux_Ferre" id="pst1">
+    <episode title="Episódeo_1" id="ep1" circunstances="">
+        <experience title="acordando" id="exp1">
+
+            <sequence title="sequencia1" id="seq1">
+                <media type="audio" src="acordando.mp3" id="audioacordando"/>
+                <media type="audio" src="no_carro.mp3" id="audiono_carro"/>
+                <media type="audio" src="chegada.mp3" id="audiochegada"/>
+
+                <decisionPoint timeout="500" timeOutAction="{seek:seq1.audiochegada,stop:this}">
+                    <option name="primeiraEscolha" condition="onVoiceRecognition(['lux','primeiro']) interator[1].voioceRecognition()" action="{start:#seqlux1, save:aura.fe=10}"/>
+                    <option name="segundaEscolha" condition="voiceRecognition(['ferre','segundo','sair'])" action="{start:#seqferre1, save:aura.fe=10}"/>
+                </decisionPoint>
+
+            </sequence>
+
+            <sequence title="sequenciaEfeitoSensorial1" id="seqef1" optional="true">
+                <sensorialEffect type="temperature" properties='{celcius:18, delay:180, dur:30}'/>
+            </sequence>
+
+            <sequence title="sequenciaLux" id="seqlux1" state:"disabled" circunstances="{}">
+                <media type="audio" src="dentro.mp3" id="audiodentro"/>
+            </sequence>
+
+            <adaptativeSequence mode="single">
+                <sequence title="sequenciaFerre" id="seqferre1" status:"disabled" circunstances="{}">
+                    <media type="audio" src="fora.mp3" id="audiofora"/>
+                </sequence>
+            </adaptativeSequence>
+
+            <sequence title="sequenciaContinuacao" id="seq" circunstances="onEnd(#seqlux1) or onEnd(#seqferre1)">
+
+                <media type="audio" src="dentro_do_predio.mp3" id="audioDentroDoPredio"/>
+
+                <decisionPoint timeout="500" timeOutAction="{seek:#audioDentroDoPredio, stop:this}">
+                    <option name="primeiraEscolha" condition="onVoiceRecognition(['lux','primeiro'])" action="{start:#seqlux2, save:aura.fe=10}"/>
+                    <option name="segundaEscolha" condition="voiceRecognition(['ferre','segundo','sair'])" action="{start:#seqferre2, save:aura.fe=10}"/>
+                </decisionPoint>
+
+            </sequence>
+
+            <sequence title="sequenciaLux2" id="seqlux1" status:"enable" circunstances="{}">
+                <media type="audio" src="dentro2.mp3" id="audiodentro2"/>
+                <media type="audio" src="fora_do_predio.mp3" id="audioForaDoPredio"/>
+            </sequence>
+
+            <sequence title="sequenciaFerre2" id="seqferre1" status:"enable" circunstances="{}">
+                <media type="audio" src="fora2.mp3" id="audiofora2"/>
+                <media type="audio" src="fora_do_predio.mp3" id="audioForaDoPredio"/>
+            </sequence>
+
+        </sequence>
+
+    </experience>
+</episode>
+</pervasiveStoryTelling>
+

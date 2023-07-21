@@ -1,0 +1,56 @@
+<pervasiveStoryTelling id="pst1" name="Lux_Ferre" title="Lux Ferre" circunstances='"interator.age">=16'>
+
+    <episode id="primeiroEpisodeo" name="PrimeiroEpisodeo" title="Primeiro Episódeo, Lux Ferrer">
+        <experience id="exp1" name="Acordando" circunstances="device.type.voiceRecognition">
+
+            <!-- ATO 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <sequence name="sequenciaInicial" id="sequenciaInicial" syncedGroup="primeiraSequencia">
+                <media id="audioacordando" type="audio" devType="homeAssistence" src="acordando.mp3" />
+                <media id="audiono_carro" type="audio" devType="homeAssistence" src="no_carro.mp3" />
+                <media id="audiochegada" type="audio" devType="homeAssistence" src="chegada.mp3" />
+
+                <decisionPoint timeout="500" timeOutAction="{seek:sequenciaInicial.audiochegada,stop:this}">
+                    <option name="primeiraEscolha" condition="onVoiceRecognition(['lux','primeiro']) interator[1].voioceRecognition()" action="{enable:#SequenciaLuxAto1, disable:#SequenciaFerrerAto1, save:aura.fe=10}"/>
+                    <option name="segundaEscolha" condition="voiceRecognition(['ferre','segundo','sair'])" action="{enable:#SequenciaFerrerAto1, disable:#SequenciaLuxAto1, save:aura.fe=-10}"/>
+                </decisionPoint>
+
+            </sequence>
+
+            <sequence id="sequenciaSensorialTemperatura" name="SequenciaEfeitoSensorial1" syncedGroup="primeiraSequencia" optional="true">
+                <sensorialEffect type="temperature" properties='{celcius:18, delay:180, dur:30}'/>
+            </sequence>
+
+            <sequence id="SequenciaLuxAto1" name="SequenciaLuxAto1" state="disabled">
+                <media id="audiodentro" type="audio" devType="homeAssistence" src="dentro.mp3" />
+            </sequence>
+
+            <sequence id="SequenciaFerrerAto1" name="SequenciaFerrerAto1" state="disabled">
+                <media type="audio" src="fora.mp3" devType="homeAssistence" id="audiofora"/>
+            </sequence>
+            
+            <!-- ATO 2 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+            <sequence id="SegundaSequencia" name="sequenciaContinuacao" circunstances="isFinished(#SequenciaLuxAto1) || isFinished(#SequenciaFerrerAto1)">
+
+                <media id="audioDentroDoPredio" type="audio" src="dentro_do_predio.mp3" devType="homeAssistence" />
+
+                <decisionPoint timeout="500" timeOutAction="{seek:#audioDentroDoPredio, stop:this}">
+                    <option name="primeiraEscolha" condition="onVoiceRecognition(['lux','primeiro'])" action="{enable:#SequenciaLuxAto2, disable:#SequenciaFerrerAto2, save:aura.fe=10}"/>
+                    <option name="segundaEscolha" condition="voiceRecognition(['ferre','segundo','sair'])" action="{enable:#SequenciaLuxAto2, disable:#SequenciaLuxAto2, save:aura.fe=-10}"/>
+                </decisionPoint>
+
+            </sequence>
+
+            <sequence name="SequenciaLuxAto2" id="seqlux2" status="disabled" circunstances="{}">
+                <media type="audio" src="dentro2.mp3" id="audiodentro2"/>
+                <media type="audio" src="fora_do_predio.mp3" id="audioForaDoPredio"/>
+            </sequence>
+
+            <sequence name="SequenciaFerrerAto2" id="SequenciaFerrerAto2" status="disabled" circunstances="{}">
+                <media type="audio" src="fora2.mp3" id="audiofora2"/>
+                <media type="audio" src="fora_do_predio.mp3" id="audioForaDoPredio"/>
+            </sequence>
+
+        </experience>
+    </episode>
+</pervasiveStoryTelling>
+
