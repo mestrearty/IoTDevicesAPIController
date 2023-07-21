@@ -1,0 +1,49 @@
+{
+  "name": "devices-api",
+  "version": "1.0.0",
+  "description": "Git para armazenar documentos, arquivos e máquina de apresentação da tese de mestrado.",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/server.js\"",
+    "build": "tsc --build tsconfig.json",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Ventura",
+  "license": "ISC",
+  "dependencies": {
+    "@tuya/tuya-connector-nodejs": "^2.0.3",
+    "@types/express-serve-static-core": "^4.17.22",
+    "base64url": "^3.0.1",
+    "body-parser": "^1.19.0",
+    "body-parser-xml": "^2.0.1",
+    "console-stamp": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-xml-bodyparser": "^0.3.0",
+    "jwt-decode": "^2.2.0",
+    "log-timestamp": "^0.3.0",
+    "node-json-db": "^1.3.0",
+    "node-yeelight": "^1.0.6",
+    "node-yeelight-wifi": "^0.1.4",
+    "nodemon": "^2.0.2",
+    "prompt-sync": "^4.2.0",
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "tsc-watch": "^4.2.3",
+    "tuya-cloud": "^1.2.4",
+    "tuya-cloud-api": "^1.1.0",
+    "tuyapi": "^7.2.0",
+    "typescript": "3.8.3",
+    "uuid": "^8.3.2",
+    "websocket": "^1.0.33",
+    "ws": "^7.4.4",
+    "xml2json": "^0.12.0",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^15.14.0"
+  }
+}

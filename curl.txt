@@ -1,0 +1,15 @@
+curl --header "Content-Type: application/json" \
+  --request PUT \
+  --data '{"commands": {"switch": false,"work_mode": "white"}}' \
+  http://localhost:10101/devices/?id=eb541394999858d637nrco
+
+  curl --header "Content-Type: application/json" \
+  --request PUT \
+  --data '{"commands": {"switch": true,"work_mode": "white"}}' \
+  http://localhost:10101/devices/?id=eb541394999858d637nrco
+
+curl http://localhost:10100/player/play/interator1/3c802c10-a9e4-4a0d-b9c8-b2cff35d82e7/primeiroEpisodio
+
+ curl --header "Content-Type: application/json" \
+  --request GET \
+  http://localhost:10100/player/play/interator1/3c802c10-a9e4-4a0d-b9c8-b2cff35d82e7/primeiroEpisodio

@@ -1,0 +1,184 @@
+{
+  "alexa": {
+    "status": { "status": "awaiting" },
+    "answer": { "answer": "lux" },
+    "msgToTalk": { "msgToTalk": "Lux ou Ferrer?" }
+  },
+  "input": {
+    "awaiting": {
+      "db8e79d0-f199-11eb-8dd2-b9094d54f8d3": {
+        "id": "db8e79d0-f199-11eb-8dd2-b9094d54f8d3",
+        "type": "geolocation",
+        "resolved": false
+      },
+      "db8f6430-f199-11eb-8dd2-b9094d54f8d3": {
+        "id": "db8f6430-f199-11eb-8dd2-b9094d54f8d3",
+        "type": "voiceRecognition",
+        "resolved": false
+      }
+    },
+    "resolved": {
+      "ff8f3a80-f087-11eb-b168-e5932a06a926": {
+        "id": "ff8f3a80-f087-11eb-b168-e5932a06a926",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611062,
+          "latitude": -21.7534487,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "ff8ffdd0-f087-11eb-b168-e5932a06a926": {
+        "id": "ff8ffdd0-f087-11eb-b168-e5932a06a926",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "pirulito assado"
+      },
+      "ffe3c120-f09d-11eb-96bb-a746e194d895": {
+        "id": "ffe3c120-f09d-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "ffe4d290-f09d-11eb-96bb-a746e194d895": {
+        "id": "ffe4d290-f09d-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "Opa José vá né"
+      },
+      "7f12b1d0-f09f-11eb-96bb-a746e194d895": {
+        "id": "7f12b1d0-f09f-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "7f137520-f09f-11eb-96bb-a746e194d895": {
+        "id": "7f137520-f09f-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "faz o Zack do Mané do cabaré"
+      },
+      "0a920f30-f0a0-11eb-96bb-a746e194d895": {
+        "id": "0a920f30-f0a0-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "0a92ab70-f0a0-11eb-96bb-a746e194d895": {
+        "id": "0a92ab70-f0a0-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "Opa José"
+      },
+      "0340a060-f0a1-11eb-96bb-a746e194d895": {
+        "id": "0340a060-f0a1-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "03413ca0-f0a1-11eb-96bb-a746e194d895": {
+        "id": "03413ca0-f0a1-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "o José"
+      },
+      "61a22090-f0a4-11eb-96bb-a746e194d895": {
+        "id": "61a22090-f0a4-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "61a2e3e0-f0a4-11eb-96bb-a746e194d895": {
+        "id": "61a2e3e0-f0a4-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "meu celular apitou oi testando"
+      },
+      "d025a450-f0a5-11eb-96bb-a746e194d895": {
+        "id": "d025a450-f0a5-11eb-96bb-a746e194d895",
+        "type": "geolocation",
+        "resolved": true,
+        "data": {
+          "speed": 0,
+          "heading": 0,
+          "altitude": 735.4000244140625,
+          "accuracy": 20,
+          "longitude": -43.3611147,
+          "latitude": -21.753449,
+          "latitudeDelta": 0.014,
+          "longitudeDelta": 0.014
+        }
+      },
+      "d0264090-f0a5-11eb-96bb-a746e194d895": {
+        "id": "d0264090-f0a5-11eb-96bb-a746e194d895",
+        "type": "voiceRecognition",
+        "resolved": true,
+        "data": "testando alguma coisa"
+      }
+    },
+    "backup": {
+      "623e9230-ebc3-11eb-9681-8dce6a6558a7": {
+        "id": "623e9230-ebc3-11eb-9681-8dce6a6558a7",
+        "type": "geolocation"
+      },
+      "2a9aaf70-ebc4-11eb-897f-3365a28f200f": {
+        "id": "2a9aaf70-ebc4-11eb-897f-3365a28f200f",
+        "type": "geolocation"
+      },
+      "691cd9a0-ed7f-11eb-a0df-75f0b8c6feb2": {
+        "id": "691cd9a0-ed7f-11eb-a0df-75f0b8c6feb2",
+        "type": "voiceRecognition"
+      }
+    }
+  }
+}
